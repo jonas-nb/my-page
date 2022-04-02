@@ -7,7 +7,7 @@ function Navbar() {
         <ul className="flex w-64 h-10 justify-around items-center ">
           <li>
             <Link
-              className="text-white rounded bg-violet-700 w-20 h-7 flex justify-center items-center "
+              className="text-white rounded bg-red-500 w-20 h-7 flex justify-center items-center "
               to="/about"
             >
               About
@@ -15,7 +15,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              className="text-white rounded bg-violet-700 w-20 h-7 flex justify-center items-center "
+              className="text-white rounded bg-red-500 w-20 h-7 flex justify-center items-center "
               to="/about"
             >
               Work
@@ -23,7 +23,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              className="text-white rounded bg-violet-700 w-20 h-7 flex justify-center items-center "
+              className="text-white rounded bg-red-500 w-20 h-7 flex justify-center items-center "
               to="/about"
             >
               Contact
