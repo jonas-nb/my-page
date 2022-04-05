@@ -11,8 +11,8 @@ const Phrase = () => {
           </h1>
           <blockquote>
             <p className="text-center font-mono font-semibold ">
-              Qualquer tecnologia suficientemente avançada é indistinta de
-              magia.
+              Any sufficiently advanced technology is indistinguishable from
+              magic
             </p>
             <q className="font-mono text-xs text-right block mt-1 mr-1">
               Arthur C. Clarke
