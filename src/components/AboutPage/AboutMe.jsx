@@ -1,4 +1,5 @@
 import React from "react";
+import Diferentials from "./Differentials/Diferentials";
 import MyPerfil from "./perfil/MyPerfil";
 
 import Phrase from "./Phrase";
@@ -10,6 +11,7 @@ const AboutMe = () => {
       <Phrase />
       <MyPerfil />
       <SkillPage />
+      <Diferentials />
     </div>
   );
 };

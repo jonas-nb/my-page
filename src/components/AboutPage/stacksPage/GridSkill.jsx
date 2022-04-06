@@ -1,4 +1,5 @@
 import React from "react";
+import "./efeitosGrid.css";
 import {
   IoLogoHtml5,
   IoLogoCss3,
@@ -8,12 +9,12 @@ import {
 import { ImGit } from "react-icons/im";
 const GridSkill = () => {
   return (
-    <div>
-      <IoLogoHtml5 />
-      <IoLogoCss3 />
-      <IoLogoJavascript />
-      <ImGit />
-      <IoLogoReact />
+    <div className="jonas flex justify-around items-center mt-5">
+      <IoLogoHtml5 className="text-orange-600 text-6xl " />
+      <IoLogoCss3 className="text-blue-600 text-6xl " />
+      <IoLogoJavascript className="text-yellow-500 text-6xl " />
+      <ImGit className="text-orange-600 text-6xl " />
+      <IoLogoReact className="text-teal-400 text-6xl " />
     </div>
   );
 };
