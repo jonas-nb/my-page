@@ -9,7 +9,7 @@ import {
 import { ImGit } from "react-icons/im";
 const GridSkill = () => {
   return (
-    <div className="jonas flex justify-around items-center mt-5">
+    <div className="flex justify-around items-center mt-5">
       <IoLogoHtml5 className="text-orange-600 text-6xl " />
       <IoLogoCss3 className="text-blue-600 text-6xl " />
       <IoLogoJavascript className="text-yellow-500 text-6xl " />

@@ -8,7 +8,7 @@ function Navbar() {
           <li>
             <Link
               className="text-white rounded bg-red-500 w-20 h-7 flex justify-center items-center "
-              to="/about"
+              to="/"
             >
               About
             </Link>
