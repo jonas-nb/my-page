@@ -7,7 +7,7 @@ import Social from "./Social";
 
 const FooterPage = () => {
   return (
-    <div>
+    <div className="">
       <Logo />
       <div>
         <Menu />
