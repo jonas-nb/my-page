@@ -1,9 +1,9 @@
 import React from "react";
-import Contact from "./Contact";
+
 import Copy from "./Copy";
 import Logo from "./Logo";
 import Menu from "./Menu";
-import Social from "./Social";
+import Social from "./social/Social";
 
 const FooterPage = () => {
   return (
@@ -13,7 +13,7 @@ const FooterPage = () => {
         <Menu />
         <Social />
       </div>
-      <Contact />
+
       <Copy />
     </div>
   );

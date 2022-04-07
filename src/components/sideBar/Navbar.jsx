@@ -10,7 +10,7 @@ function Navbar() {
               className="text-white rounded bg-red-500 w-20 h-7 flex justify-center items-center "
               to="/"
             >
-              About
+              Home
             </Link>
           </li>
           <li>
