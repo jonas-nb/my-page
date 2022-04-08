@@ -11,7 +11,7 @@ const Copy = () => {
     console.log(typeof year);
   };
   return (
-    <div className=" mt-20 h-8 text-white bg-black text-center flex items-center justify-center">
+    <div className=" mt-10 h-12 text-white bg-black text-center flex items-center justify-center">
       <h1>copyright &copy; {year} </h1>
     </div>
   );

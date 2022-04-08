@@ -4,7 +4,7 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 const Icons = () => {
   return (
     <div className="">
-      <ul className="flex flex-row items-center justify-around text-5xl">
+      <ul className="flex flex-row items-center justify-around text-5xl lg:w-5/12 lg:m-auto">
         <li className="flex justify-center items-center">
           <a
             href="https://www.linkedin.com/in/jonas-batista-b77b24137/#experience"
