@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 const Menu = () => {
   const navega = useNavigate();
   return (
@@ -34,6 +34,17 @@ const Menu = () => {
           }}
         >
           Work
+        </div>
+        <div
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+            navega("/about");
+          }}
+        >
+          Contact
         </div>
       </div>
     </div>
