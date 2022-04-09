@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
 const ContactPage = () => {
+  const [stateBTN, setStateBTN] = useState(false);
+  const copyCelNumber = () => {
+    navigator.clipboard.writeText(5521982143587);
+    setStateBTN(true);
+    setTimeout(() => {
+      setStateBTN(false);
+    }, 2000);
+  };
   return (
     <div className="bg-black w-full text-white">
       <h1 className="text-center text-5xl pt-10">Contact Me</h1>
@@ -21,8 +29,16 @@ const ContactPage = () => {
           <div>Send Me An Email</div>
           <GrMail className="text-5xl" />
         </a>
-        <h2 className="text-4xl">Tel</h2>
-        <h3 className="text-3xl">+55 21 98214-3587</h3>
+        <div
+          onClick={copyCelNumber}
+          className="cursor-pointer flex flex-col items-center justify-around border w-6/12 h-14 bg-white text-black mb-3 text-xl rounded shadow-md shadow-slate-800"
+        >
+          <div>Phone</div>
+          <div className="font-semibold ">+55 21 98214-3587</div>
+        </div>
+        <h5 className="mb-36">
+          {stateBTN === false ? "click and copy the number" : "Copied!"}
+        </h5>
       </div>
     </div>
   );
