@@ -2,7 +2,7 @@ import React from "react";
 
 const ColorGenerator = () => {
   return (
-    <div className="m-auto mb-16 lg:mb-32  border w-3/4 lg:w-2/3 xl:w-1/2 mt-10 shadow-lg shadow-white cursor-pointer grid items-center ">
+    <div className="m-auto mb-16 lg:mb-32  border w-3/4 lg:w-2/3 xl:w-1/2 mt-10 shadow-lg shadow-white cursor-pointer grid items-center bg-black ">
       <div className="grid">
         <div className="text-sm md:text-xl lg:text-2xl  hover:text-red-400">
           <a

@@ -11,7 +11,7 @@ const ContactPage = () => {
   };
   return (
     <div className="bg-black w-full text-white">
-      <h1 className="text-center text-5xl pt-10">Contact Me</h1>
+      <h1 className="text-center text-5xl pt-10 lg:pt-3">Contact Me</h1>
       <div className="mt-10 flex flex-col justify-center items-center pb-10 ">
         <a
           href="https://www.linkedin.com/in/jonas-batista-b77b24137/"

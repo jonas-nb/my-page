@@ -7,7 +7,7 @@ import SkillPage from "./stacksPage/SkillPage";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="bg-white pt-1">
       <Phrase />
       <MyPerfil />
       <SkillPage />

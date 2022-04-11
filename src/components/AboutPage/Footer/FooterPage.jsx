@@ -6,7 +6,7 @@ import Social from "./social/Social";
 
 const FooterPage = () => {
   return (
-    <div className="">
+    <div className="bg-white">
       <div>
         <Menu />
         <Social />
