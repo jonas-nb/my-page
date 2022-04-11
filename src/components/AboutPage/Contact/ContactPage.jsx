@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GrLinkedin, GrGithub, GrMail } from "react-icons/gr";
+import "./animationContact.css";
 const ContactPage = () => {
   const [stateBTN, setStateBTN] = useState(false);
   const copyCelNumber = () => {
@@ -37,7 +38,11 @@ const ContactPage = () => {
           <div className="font-semibold ">+55 21 98214-3587</div>
         </div>
         <h5 className="mb-36">
-          {stateBTN === false ? "click and copy the number" : "Copied!"}
+          {stateBTN === false ? (
+            "click and copy the number"
+          ) : (
+            <div className="animation rounded w-11/12">copied!</div>
+          )}
         </h5>
       </div>
     </div>

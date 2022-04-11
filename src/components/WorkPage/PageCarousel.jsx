@@ -4,8 +4,8 @@ const PageCarousel = (props) => {
   return (
     <div className="border-2 border-white/10 w-11/12 m-auto rounded mt-2  bg-black h-52 flex justify-start text-white shadow-lg shadow-slate-800/30">
       {/* image project */}
-      <div className="w-3/6 flex">
-        <img className="object-cover" src={props.imgEnd} alt="" />
+      <div className="w-3/6 flex ">
+        <img className="object-cover rounded" src={props.imgEnd} alt="" />
       </div>
 
       {/* About project */}
