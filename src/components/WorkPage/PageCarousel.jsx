@@ -17,7 +17,7 @@ const PageCarousel = (props) => {
           {props.about}
         </p>
         {/* Container of visited */}
-        <div className=" w-full h-6 flex justify-around">
+        <div className=" w-full h-6 flex justify-around border">
           <a
             href={props.code}
             className="border w-10 text-center rounded bg-slate-200 text-black"
@@ -28,7 +28,7 @@ const PageCarousel = (props) => {
           <a
             href={props.page}
             className="border w-24 text-center rounded bg-slate-200 text-black"
-            target={"_blank"}
+            target="_blank"
           >
             Web Project
           </a>

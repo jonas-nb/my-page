@@ -20,6 +20,7 @@ const WorkSection = (props) => {
             about="Application made with React.js, it consumes an api that randomly returns advice."
             imgEnd="https://images.pexels.com/photos/220147/pexels-photo-220147.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
             code="https://github.com/jonas-nb/AdviceApp"
+            page="https://62715e70d8c4d800b5046c5d--stirring-jalebi-9adf6d.netlify.app/"
           />
         </div>
         <div>
@@ -29,15 +30,7 @@ const WorkSection = (props) => {
             about="Application made with React.js, it consumes a super fun api with the Japanese anime 'Pokemon' contains the first generation of pokemons."
             imgEnd="https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
             code="https://github.com/jonas-nb/PokeInit"
-          />
-        </div>
-        <div>
-          <PageCarousel
-            title="Social Network Speak! "
-            about="project that simulates a social network, the idea is to make people communicate to exchange languages and learn.
-the same was designed in React.js."
-            imgEnd="https://images.pexels.com/photos/6838558/pexels-photo-6838558.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-            code="https://github.com/jonas-nb/login"
+            page="https://fancy-chebakia-587538.netlify.app/"
           />
         </div>
       </Slider>
