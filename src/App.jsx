@@ -1,11 +1,10 @@
 import React from "react";
-import Sidebar from "./components/sideBar/Sidebar";
+import Sidebar from "./01 - header/sideBar/Sidebar";
 import { Route, Routes } from "react-router-dom";
-import AboutMe from "./components/AboutPage/AboutMe";
-import FooterPage from "./components/AboutPage/Footer/FooterPage";
-import WorkSection from "./components/WorkPage/WorkSection";
-import ContactPage from "./components/AboutPage/Contact/ContactPage";
-
+import AboutMe from "./02 - main/AboutMe";
+import FooterPage from "./03 - footer/FooterPage";
+import WorkSection from "./02 - main/WorkPage/WorkSection";
+import ContactPage from "./02 - main/Contact/ContactPage";
 const App = () => {
   return (
     <div>

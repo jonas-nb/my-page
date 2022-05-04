@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import NavSocial from "./NavSocial";
 const Sidebar = () => {
   return (
-    <div className=" bg-black w-full h-32 flex flex-col lg:flex-row items-center justify-around lg:justify-start border-t">
+    <div className=" bg-black w-full h-52 flex flex-col lg:flex-row items-center justify-around lg:justify-start border-t">
       <Logo />
       <Navbar />
       <NavSocial />
