@@ -29,7 +29,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
         },
     },
     '& .MuiSwitch-thumb': {
-        backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
+        backgroundColor: theme.palette.mode === 'dark' ? '#8e67ae' : '#4f6b92',
         width: 32,
         height: 32,
         '&:before': {
@@ -57,7 +57,7 @@ export default function DarkModeButton() {
     const { darkModeState, setDarkModeState } = useContext(MyContext)
     console.log(darkModeState)
     return (
-        <FormGroup>
+        <FormGroup className="relative left-8">
             <FormControlLabel
                 control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
                 label=""
