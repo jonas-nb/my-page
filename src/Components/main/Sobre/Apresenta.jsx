@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MyContext } from '../../Contexts/MyContext'
 import styled from 'styled-components'
+import Svg from '../../../Assets/img/Saturn.svg'
+import Anime, { anime } from 'react-anime'
+import MeusLinks from './MeusLinks'
 export const MaquinaEscreve = styled.h1`
     font-family: sans-serif;
     padding-top: 10px;
@@ -16,7 +20,7 @@ export const MaquinaEscreve = styled.h1`
     /* The typing effect */
     @keyframes typing {
         from {
-            width: 0;
+            width: 0%;
         }
         to {
             width: 100%;
@@ -34,16 +38,50 @@ export const MaquinaEscreve = styled.h1`
         }
     }
 `
+
+console.log(Svg)
+let colors = ['blue', 'green', 'red']
 const Apresenta = () => {
+    const { darkModeState, BreakPoint } = useContext(MyContext)
     const minWidth = window.innerWidth
+
     return (
-        <div className="flex flex-row border justify-around items-center">
-            <div className="border border-black flex flex-col  h-60 p-2 justify-center items-center">
-                <h1 className="text-3xl sm:text-4xl">Olá, eu sou</h1>
-                <h2 className="text-4xl">Jonas Batista</h2>
+        <div
+            className={`${
+                BreakPoint.window < BreakPoint.window ? 'flex-col' : 'flex-col'
+            }'border border-red-600 sm:h-80 md:h-screen flex  justify-around items-center font-mono'`}
+        >
+            <div
+                className={`${
+                    darkModeState === false
+                        ? 'text-[#240046]'
+                        : 'text-[#ffffff]'
+                } ${
+                    BreakPoint.window > BreakPoint.value
+                        ? 'text-6xl justify-around'
+                        : 'text-4xl justify-center'
+                } text-center font-semibold tracking-tighter flex flex-col items-center h-60 p-2`}
+            >
+                <h1 className="">Olá, eu sou</h1>
+                <h2 className="">Jonas Batista</h2>
                 <MaquinaEscreve>Front-end Developer.</MaquinaEscreve>
+                <MeusLinks />
             </div>
-            {minWidth > 667 ? <div className="border border-black"></div> : ''}
+            <div className="w-96">
+                <Anime
+                    direction={'alternate'}
+                    rotate={360}
+                    loop={true}
+                    duration={10000}
+                    delay={anime.stagger(100)}
+                    scale={[0.1, 0.9]}
+                >
+                    {colors.map((color, i) => (
+                        <div key={i} className={color} />
+                    ))}
+                    <img src={Svg} alt="" id="Oi" className="w-96" />
+                </Anime>
+            </div>
         </div>
     )
 }
