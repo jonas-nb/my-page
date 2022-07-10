@@ -4,14 +4,9 @@ export const MyContext = createContext()
 
 export const GlobalStorage = ({ children }) => {
     const [darkModeState, setDarkModeState] = useState(false)
-    const BreakPoint = {
-        window: window.innerWidth,
-        value: 667,
-    }
+
     return (
-        <MyContext.Provider
-            value={{ darkModeState, setDarkModeState, BreakPoint }}
-        >
+        <MyContext.Provider value={{ darkModeState, setDarkModeState }}>
             {children}
         </MyContext.Provider>
     )

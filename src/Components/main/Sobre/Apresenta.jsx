@@ -5,9 +5,7 @@ import Svg from '../../../Assets/img/Saturn.svg'
 import Anime, { anime } from 'react-anime'
 import MeusLinks from './MeusLinks'
 export const MaquinaEscreve = styled.h1`
-    font-family: sans-serif;
     padding-top: 10px;
-    font-size: 1.8rem;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -39,35 +37,29 @@ export const MaquinaEscreve = styled.h1`
     }
 `
 
-console.log(Svg)
-let colors = ['blue', 'green', 'red']
 const Apresenta = () => {
-    const { darkModeState, BreakPoint } = useContext(MyContext)
-    const minWidth = window.innerWidth
+    const { darkModeState } = useContext(MyContext)
 
     return (
+        // container
         <div
-            className={`${
-                BreakPoint.window < BreakPoint.window ? 'flex-col' : 'flex-col'
-            }'border border-red-600 sm:h-80 md:h-screen flex  justify-around items-center font-mono'`}
+            className={`w-full h-screen flex flex-col sm:flex-row items-center justify-center sm:justify-around font-mono'`}
         >
+            {/* letreiro */}
             <div
                 className={`${
                     darkModeState === false
                         ? 'text-[#240046]'
                         : 'text-[#ffffff]'
-                } ${
-                    BreakPoint.window > BreakPoint.value
-                        ? 'text-6xl justify-around'
-                        : 'text-4xl justify-center'
-                } text-center font-semibold tracking-tighter flex flex-col items-center h-60 p-2`}
+                }  sm:relative sm:top-10 text-2xl sm:text-xl text-center font-semibold font-mono tracking-tighter flex flex-col items-center h-60`}
             >
                 <h1 className="">Olá, eu sou</h1>
                 <h2 className="">Jonas Batista</h2>
                 <MaquinaEscreve>Front-end Developer.</MaquinaEscreve>
                 <MeusLinks />
             </div>
-            <div className="w-96">
+            {/* animação svg */}
+            <div className="relative top-10 w-44">
                 <Anime
                     direction={'alternate'}
                     rotate={360}
@@ -76,10 +68,7 @@ const Apresenta = () => {
                     delay={anime.stagger(100)}
                     scale={[0.1, 0.9]}
                 >
-                    {colors.map((color, i) => (
-                        <div key={i} className={color} />
-                    ))}
-                    <img src={Svg} alt="" id="Oi" className="w-96" />
+                    <img src={Svg} alt="" className="w-96 fill-[#fff]" />
                 </Anime>
             </div>
         </div>

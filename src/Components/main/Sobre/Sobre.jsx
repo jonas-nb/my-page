@@ -4,16 +4,15 @@ import Apresenta from './Apresenta'
 import Perfil from './Perfil'
 
 const Sobre = () => {
-    const { darkModeState, BreakPoint } = useContext(MyContext)
-    console.log(BreakPoint)
+    const { darkModeState } = useContext(MyContext)
+
     return (
         <div
             className={`${
                 darkModeState === false ? 'bg-[#fcebff]' : 'bg-[#10002B]'
-            } ${BreakPoint.window < BreakPoint.value ? 'pt-20' : ''}`}
+            } `}
         >
             <Apresenta />
-            <Perfil />
         </div>
     )
 }
