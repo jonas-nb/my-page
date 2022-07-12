@@ -43,7 +43,7 @@ const Apresenta = () => {
     return (
         // container
         <div
-            className={`w-full h-screen flex flex-col sm:flex-row items-center justify-center sm:justify-around font-mono'`}
+            className={`pt-12 w-full h-screen flex flex-col sm:flex-row md:flex-col lg:flex-row items-center justify-center sm:justify-around font-mono'`}
         >
             {/* letreiro */}
             <div
@@ -51,15 +51,15 @@ const Apresenta = () => {
                     darkModeState === false
                         ? 'text-[#240046]'
                         : 'text-[#ffffff]'
-                }  sm:relative sm:top-10 text-2xl sm:text-xl text-center font-semibold font-mono tracking-tighter flex flex-col items-center h-60`}
+                } pt-5 text-2xl sm:text-2xl md:text-4xl text-center font-semibold font-mono tracking-tighter flex flex-col items-center `}
             >
-                <h1 className="">Olá, eu sou</h1>
-                <h2 className="">Jonas Batista</h2>
+                <h1 className="">Bem vindo!</h1>
+                <h2 className="">Eu sou Jonas Batista</h2>
                 <MaquinaEscreve>Front-end Developer.</MaquinaEscreve>
                 <MeusLinks />
             </div>
             {/* animação svg */}
-            <div className="relative top-10 w-44">
+            <div className="w-44 md:w-[15rem] block">
                 <Anime
                     direction={'alternate'}
                     rotate={360}
@@ -68,7 +68,7 @@ const Apresenta = () => {
                     delay={anime.stagger(100)}
                     scale={[0.1, 0.9]}
                 >
-                    <img src={Svg} alt="" className="w-96 fill-[#fff]" />
+                    <img src={Svg} alt="" className="" />
                 </Anime>
             </div>
         </div>

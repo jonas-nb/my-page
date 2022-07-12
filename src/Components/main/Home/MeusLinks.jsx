@@ -3,10 +3,11 @@ import { useContext } from 'react'
 import { MdDownloading } from 'react-icons/md'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { MyContext } from '../../Contexts/MyContext'
+import '../Projects/animationCard.css'
 const MeusLinks = () => {
     const { darkModeState } = useContext(MyContext)
     return (
-        <div className="relative top-4 w-full flex flex-col relative top-10">
+        <div className="pt-10 w-full flex flex-col">
             <a
                 className={`${
                     darkModeState === false
@@ -17,13 +18,16 @@ const MeusLinks = () => {
                 download="CV"
             >
                 CV
-                <MdDownloading className="text-purple-700 bg-[#C77DFF] rounded-full animate-bounce" />
+                <MdDownloading className="bounce-in-fwd text-purple-700 bg-[#C77DFF] rounded-full slide-in-top2" />
             </a>
-            <div className="m-auto mt-2 flex justify-around w-4/12 relative top-5">
-                <a href="">
+            <div className="m-auto mt-2 flex justify-around w-4/12 ">
+                <a href="https://github.com/jonas-nb" target={'_blank'}>
                     <FiGithub />
                 </a>
-                <a href="">
+                <a
+                    href="https://www.linkedin.com/in/jonas-batista-b77b24137/"
+                    target={'_blank'}
+                >
                     <FiLinkedin />
                 </a>
             </div>

@@ -27,13 +27,13 @@ const Navbar = () => {
                 label={<BsList className="text-2xl" />}
             >
                 <Dropdown.Item>
-                    <Link to="/">Quem Sou</Link>
+                    <Link to="/">Home</Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                    <Link to="/Sobre">Sobre</Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
                     <Link to="/Projetos">Projetos</Link>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                    <Link to="/Tecnologias">Tecnologias</Link>
                 </Dropdown.Item>
             </Dropdown>
         </div>

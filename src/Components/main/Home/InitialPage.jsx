@@ -1,9 +1,8 @@
 import React, { useContext } from 'react'
 import { MyContext } from '../../Contexts/MyContext'
 import Apresenta from './Apresenta'
-import Perfil from './Perfil'
 
-const Sobre = () => {
+const InitialPage = () => {
     const { darkModeState } = useContext(MyContext)
 
     return (
@@ -17,4 +16,4 @@ const Sobre = () => {
     )
 }
 
-export default Sobre
+export default InitialPage

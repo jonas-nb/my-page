@@ -55,7 +55,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 export default function DarkModeButton() {
     const { darkModeState, setDarkModeState } = useContext(MyContext)
-    console.log(darkModeState)
+
     return (
         <FormGroup className="relative left-8">
             <FormControlLabel
