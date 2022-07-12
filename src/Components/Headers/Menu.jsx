@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
 import { MyContext } from '../Contexts/MyContext'
 import DarkModeButton from './DarkModeButton'
 import Navbar from './Navbar'
 import NavbarFull from './NavbarFull'
+import logo from '../../Assets/img/Logo.jpg'
 
 const Menu = () => {
     const { darkModeState } = useContext(MyContext)
@@ -11,21 +11,12 @@ const Menu = () => {
     const minWidth = window.innerWidth
     return (
         <div className="h-16 flex flex-row items-center justify-around">
-            <Link to="/">
-                {darkModeState === false ? (
-                    <img
-                        className="relative w-12 border border-[#10002b] rounded-full bg-[#E0AAFF] shadow-md shadow-[#E0aaff]/50 p-1"
-                        src="src\Assets\img\124610.png"
-                        alt=""
-                    />
-                ) : (
-                    <img
-                        className="relative w-12 border border-[#10002b] rounded-full bg-[#E0AAFF] shadow-sm shadow-[#7c12be] p-1"
-                        src="src\Assets\img\124610.png"
-                        alt=""
-                    />
-                )}
-            </Link>
+            <img
+                className="w-11 rounded-full outline outline-[#7013c1]"
+                src={logo}
+                alt=""
+            />
+            <div className="text-white font-extrabold bg-white"></div>
             {minWidth < 667 ? <Navbar /> : <NavbarFull />}
             <DarkModeButton />
         </div>
